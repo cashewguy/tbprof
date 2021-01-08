@@ -1,54 +1,242 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
 
-title: Thomas Bates
-email: thomasbatesiii@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Future social worker active in housing and homelessness.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://thirdrailadvocacy.com" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-# github_username:  jekyll
+# Content configuration version
+version: 2
+
+# Personal info
+name: Thomas Bates III, BSW
+title: Social Services Worker, Homelessness & Poverty
+email: tbates@uchicago.edu
+website: www.thomasbates.info
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+# twitter_username: facespics
+# github_username:  sproogen
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: tebates3
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+google_analytics: "G-PK0R5L9C5N"
+
+# About Section
+# about_title: About Me
+# about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Thomas, and I work in social services while I pursue my master's degree in Social Work.  Currently, I'm the Continuum of Care Coordinator for the Champaign County Continuum of Service Providers to the Homeless, where I work to coordinate our responsibilities as the US Department of Housing and Urban Development's Continuum of Care for Champaign County.
+
+  Of the many aspects of my job that I enjoy, the things I enjoy most are <mark>policy advocacy</mark>, <mark>grant work</mark>, and <mark>coordinating multi-agency strategic efforts</mark>.
+
+  <br />
+  <br />
+
+  Jump to <mark><a href="#education">Education</a></mark>, <mark><a href="#profexp">Professional Experience</a></mark>, <mark><a href="#servexp">Service Experience</a></mark>, <mark><a href="#resexp">Research Experience</a></mark>.
+
+content:
+  - title: <a name="education">Education</a> # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: The University of Chicago
+        caption: Present
+        sub_title: AM (MSW) Candidate - Incoming
+        quote: >
+          I am excited to be attending the School of Social Service Administration as part of the June 2021 cohort of Advanced Standing students in the Social Administration concentration.
+
+      - layout: top
+        title: University of Illinois School of Social Work
+        caption: December 2019
+        sub_title: Bachelor of Social Work
+        quote: >
+          I visited the SSW in the "off-season" when the school was nearly empty, but even so, I felt at home when I stepped into the building, and I greatly valued my time there.
+
+      - layout: top
+        title: Illinois Eastern Community Colleges
+        caption: May 2017
+        sub_title: Associate of Art, Associate of Art & Science
+
+  - title: <a name="profexp">Professional Experience</a> # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Champaign Co. Regional Planning Commission
+        sub_title: Coordinator - Continuum of Service Providers to the Homeless
+        link: https://ccrpc.org/committees/continuum-of-care/
+        # link_text: Project Website
+        caption: July 2019 - Present
+        quote: >
+          I am the first person in this newly-created role, and I have enjoyed having the responsibility to help shape it and set precedent.
+        description: | # this will include new lines to allow paragraphs
+            I provided support, facilitation, and direction to the Champaign County Continuum of Service Providers for the Homeless (CSPH), which is the Housing & Urban Development (HUD) Continuum of Care (CoC) for Champaign County.  Some of my responsibilities include:
+            - Coordination of multiple rapid-response groups during the COVID-19 pandemic, including the local deployment of Illinois Department of Human Services (IDHS) Emergency Lodging Funds and the CARES Act allocation of the Emergency Solutions Grant (ESG)
+            - Lead completion of the HUD CoC Program Competition Consolidated Application (also called "the NOFA"), while supporting the local competition for those Funds
+            - Management of all responsibilities of the annual Point-in-Time and Housing Inventory Counts
+            - Building relationships with all Continuum members and growing our membership
+            - Ensuring the Continuum's compliance with the Homeless Emergency Assistance & Rapid Transition to Housing Act (HEARTH) regulations
+            - Preparing and submitting the IL-503 Emergency Solutions Grants application to the IDHS, while liaising with IDHS for those programs
+            <hr />
+
+      - layout: left
+        title: Champaign Co. Regional Planning Commission
+        sub_title: Case Manager
+        link: https://ccrpc.org/
+        # link_text: Project Website
+        caption: August 2018 - August 2019
+        quote: >
+          I joined the RPC team as a case manager in their No Limits Self Sufficiency program, while also coordinating the temporary hardship rent assistance program.
+        description: | # this will include new lines to allow paragraphs
+            As a case manager, my work focused on clients served through the Community Service Block Grant (CSBG), the Emergency Shelter for Families, and Rapid Re-Housing.  I was also tasked with re-developing the Homeless Prevention program, which was funded by the IDHS Homeless Prevention grant, and providing case management services to some of those clients.  Some of my responsibilities included:
+            - Collaborating with clients to identify realistic, timely, and achievable goals
+            - Conducting weekly home visits
+            - Case managing clients in the Emergency Shelter for Families, Maple Grove, Rapid Re-Housing, and No Limits programs
+            - Assessing clients' levels of self-sofficiency, strengths, and barriers
+            - Assisting with walk-in assessments for Centralized Intake for Homeless
+            - It was particularly meaningful to me to work with Chicago Coalition of the Homeless on their Homeless Prevention Coalition, specifically on <a href='https://www.ilga.gov/legislation/BillStatus.asp?DocNum=3331&GAID=15&DocTypeID=HB&LegID=119833&SessionID=108&SpecSess=&Session=&GA=101'>Illinois House Bill 3331</a>, which significantly strengthened the IDHS Homeless Prevention Program
+            <hr />
+
+      - layout: left
+        title: The Pavilion Behavioral Health System
+        sub_title: Mental Health Technician
+        link: https://pavilionhospital.com/
+        # link_text: Project Website
+        caption: December 2017 - August 2018
+        quote: >
+          I worked at The Pavilion full-time as I first moved to Champaign and began my Bachelor's degree, that experience greatly enhanced my learning.
+        description: | # this will include new lines to allow paragraphs
+            I worked primarily on the Adult unit, at times floating to the Youth, RTC, Partial Hospitalization, and New Choice programs.  My responsibilities included:
+            - Facilitating Dialectical Behavior Therapy (DBT) skills groups
+            - Assiting clients in processing traumatic events & developing new coping mechanisms
+            - Collaborating with nursing, case management, and medical staff to progress client care
+            - Utilizing Therapeutic Crisis Intervention (TCI) techniques when working with clients
+            <hr />
+
+      - layout: left
+        title: Clay County Hospital
+        sub_title: Behavioral Health Coordinator
+        link: https://claycountyhospital.org/
+        # link_text: Project Website
+        caption: |
+          Behavioral Health Coordinator: December 2016 - December 2017
+          Patient Accounts Representative: March 2015 - December 2016
+        quote: >
+          I started working at CCH as an "as-needed" overnight Patient Accounts Rep, and eventually took on the role of Behavioral Health Coordinator, and worked with an amazing team.
+        description: | # this will include new lines to allow paragraphs
+            While in the role of Behavioral Health Coordinator/Case Manager, my responsibilities included:
+            - Evaluating programs offered by the Behavioral Health program within the Rural Health Clinic
+            - Identifying program service utilization & financial/insurance trends
+            - Developing relationships with area agencies
+            - Leading Behavioral Health program staffing meetings
+            - Developing a new intake process to reduce wait times & increase new client retention
+            - Developing Joint Commission compliant policies for the Behavioral Health program
+            - Providing services to persons with serious mental illness: resource brokering, service coordination, intake interviews, screening & referral, and solution-based casework
+
+  - title: <a name="servexp">Service Experience</a> # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: National Association of Social Workers, Illinois Chapter Board of Directors
+        link: https://www.naswil.org/
+        sub_title: Board Member; Undergraduate Student Representative
+        caption: 2019 - 2020 term
+
+      - layout: top
+        title: Urbana Neighborhood Connections
+        link: https://www.urbanaconnectionscenter.org/
+        sub_title: UIUC School of Social Work Service Learning
+        caption: 2019
+
+      - layout: top
+        title: Bachelor of Social Work Association
+        link: https://socialwork.illinois.edu/
+        sub_title: UIUC School of Social Work
+        caption: 2018-2019
+
+      - layout: top
+        title: Clay County Coalition Against Drug Abuse, Board of Directors
+        link: https://www.facebook.com/Coalition-Against-Drug-Abuse-of-Clay-County-CADA-259566131197742/
+        sub_title: Boardmember
+        caption: 2016-2017
+
+  - title: <a name="resexp">Research Experience</a> # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: |
+          Promoting Racial Healing through a Restorative Approach to Social and Emotional Learning
+          <br />(PI: Kevin Tan, Durriyyah Kemp)
+        caption: December 2019 - Present
+        sub_title: Research Assistant
+        description: |
+          I am assisting with Dr. Tan's & Dr. Kemp's research through facilitation of focus groups examining the impact of the presidential election on the social and emotional well-being of young people.
+
+      - layout: top
+        title: The Relationship Between 9th Grade Students' Social Skills & Internalizing Problems by Free-and-Reduced Lunch Status
+        caption: 2020 - Journal of Undergraduate Social Work Research Vol. 4 No. 1
+        sub_title: Bates, T., Tan, K., & Shin, E.
+        link: https://ugresearchjournals.illinois.edu/index.php/juswr/article/view/663
+
+      - layout: top
+        title: How do Social Skills Relate to Mental Health & Social-economic Status among High School Students?
+        caption: 18 April 2019 - Undergraduate Research Symposium, Oral Presentation
+        sub_title: Bates, T., Tan, K., & Shin, E.
+        link: https://undergradresearch.illinois.edu/assets/docs/URW2019_Final_Program.pdf
+
+      - layout: top
+        title: Journal of Undergraduate Social Work Research
+        caption: Vol. 3 No. 1 & 2
+        sub_title: Undergraduate Junior Editor
+        link: https://ugresearchjournals.illinois.edu/index.php/juswr/issue/archive
+
+      - layout: top
+        title: Undergraduate Research Assistant
+        caption: 2018 - 2019
+        sub_title: Research Assistant to Dr. Kevin Tan
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in social services and research, some of my other interests and hobbies include:
+      - Fountain pens / writing
+      - Gaming
+      - Film
+      - Still learning French (un peu à la fois)
+      - Formula 1
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
 
 # Build settings
-# theme: minima
-remote_theme: sproogen/modern-resume-theme
-plugins:
-  - jekyll-feed
+remote_theme: sproogen/resume-theme
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
