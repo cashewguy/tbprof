@@ -62,18 +62,18 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top
-        title: The University of Chicago
-        caption: Present
+        title: The University of Chicago School of Social Service Administration
+        caption: Incoming 6/2021
         sub_title: AM (MSW) Candidate - Incoming
-        quote: >
-          I am excited to be attending the School of Social Service Administration as part of the June 2021 cohort of Advanced Standing students in the Social Administration concentration.
+        description: >
+          <i>I'm excited to attend SSA as part of the June 2021 cohort of Advanced Standing students in the Social Administration concentration.</i>
 
       - layout: top
         title: University of Illinois School of Social Work
         caption: December 2019
         sub_title: Bachelor of Social Work
-        quote: >
-          I visited the SSW in the "off-season" when the school was nearly empty, but even so, I felt at home when I stepped into the building, and I greatly valued my time there.
+        description: >
+          <i>I visited the SSW in the summer when the school was nearly empty, but even so, I felt at home when I stepped into the building, and I greatly valued my time there.</i>
 
       - layout: top
         title: Illinois Eastern Community Colleges
@@ -141,7 +141,7 @@ content:
         link: https://claycountyhospital.org/
         # link_text: Project Website
         caption: |
-          Behavioral Health Coordinator: December 2016 - December 2017
+          Behavioral Health Coordinator: December 2016 - December 2017 <br /><br />
           Patient Accounts Representative: March 2015 - December 2016
         quote: >
           I started working at CCH as an "as-needed" overnight Patient Accounts Rep, and eventually took on the role of Behavioral Health Coordinator, and worked with an amazing team.
